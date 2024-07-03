@@ -91,6 +91,7 @@ select {
 body{
     max-width: 100vw;
     font-family: 'Inter', sans-serif;
+    font-size: 14px;
 }
 
 .wrapper{
@@ -248,15 +249,109 @@ body{
   }
 
   .advantages_first, .advantages_second, .advantages_third{
-    width: 50%;
+    width: 30%;
   }
 
   .advantages_title{
-    font-size: 15px;
+    font-size: 1rem;
     padding: 15px 0px;
     border-bottom: 1px solid;
   }
 
   .advantages_text{
-    font-size: 40px;
+    font-size: 2.5rem;
   }
+
+  /* ---------- */
+
+  .price_image {
+    display: flex;
+    justify-content: space-between; /* Разделяем пространство между картинкой и заголовком */
+    align-items: flex-end; /* Выравниваем элементы по нижнему краю */
+    height: 70vh;
+    margin-top: 40px;
+}
+
+.price_image_contain {
+    background-image: url('images/secondImg.jpg');
+    background-size: contain;
+    max-width: 1200px; /* Половина от 1640px */
+    width: 50%; /* Половина ширины контейнера */
+    height: 100%; /* Занимает всю высоту контейнера */
+}
+
+.price_image h2 {
+    width: 50%; /* Половина ширины контейнера */
+    text-align: center;
+    font-size: 5rem;
+    font-weight: normal;
+    margin: 0; /* Убираем отступы */
+    line-height: 50px;
+}
+
+/* ------------ */
+
+.price_list{
+  	padding-top: 5%;
+    display: flex;
+    flex-direction: column; /* Чтобы элементы располагались вертикально */
+    align-items: flex-end; /* Выравнивание по правому краю */
+    width: 100%;
+}
+
+.price_first, .price_second{
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+	border-bottom: 1px solid black;
+}
+
+.price_first p, .price_second p{
+	font-size: 2rem;
+	line-height: 80px;
+}
+
+/* -------------- */
+.order{
+	padding-top: 5%;
+	display: flex;
+    flex-direction: column; /* Чтобы элементы располагались вертикально */
+    align-items: flex-end; /* Выравнивание по правому краю */
+    width: 100%;
+}
+
+.order h2{
+	font-size: 5rem;
+    font-weight: normal;
+}
+
+.order_number_1{
+	background-image: url("images/order_1.png");
+	background-size: contain;
+	width: 100%;
+	height: 137px;
+}
+
+.order_number_2{
+	background-image: url("images/order_2.png");
+	background-size: contain;
+	width: 100%;
+	height: 137px;
+}
+
+.order_number_3{
+	background-image: url("images/order_3.png");
+	background-size: contain;
+	width: 100%;
+	height: 137px;
+}
+
+.order_num{
+	display: flex;
+	width: 40%;
+}
+
+.order_num p{
+	font-size: 2rem;
+}
+
