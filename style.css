@@ -104,7 +104,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     border-bottom: 2px solid #a4a4a4;
     align-items: center;
 }
@@ -114,7 +114,7 @@ body{
 .phone a{
     text-decoration: none;
     color: #000000;
-    font-size: 40px;
+    font-size: 2.1rem;
     font-weight: 300;
 }
 
@@ -151,13 +151,13 @@ body{
 
 .main_screen_grid_firstImg{
     background-image: url('images/firstImg.jpg');
-    background-size: contain;
+    background-size: cover;
     height: 100%;
 }
 
 .main_screen_grid_secondImg{
     background-image: url('images/secondImg.jpg');
-    background-size: contain;
+    background-size: cover;
 }
 
 .main_screen_grid_thirdImg{
@@ -194,7 +194,7 @@ body{
 
 .main_image_lineContain{
     width: 100%;
-    height: 54pxpx;
+    height: 100px;
     top: 760px;
     left: 0%;
     border: 1px solid;
@@ -281,9 +281,8 @@ body{
 }
 
 .price_image h2 {
-    width: 50%; /* Половина ширины контейнера */
     text-align: center;
-    font-size: 5rem;
+    font-size: 6.2rem;
     font-weight: normal;
     margin: 0; /* Убираем отступы */
     line-height: 50px;
@@ -312,17 +311,24 @@ body{
 }
 
 /* -------------- */
+
+.order_info{
+  margin: 0 auto;
+  width: 100%;
+}
+
+
 .order{
 	padding-top: 5%;
 	display: flex;
     flex-direction: column; /* Чтобы элементы располагались вертикально */
     align-items: flex-end; /* Выравнивание по правому краю */
-    width: 100%;
+    width: 90%;
 }
 
 .order h2{
-	font-size: 5rem;
-    font-weight: normal;
+	font-size: 6.2rem;
+  font-weight: normal;
 }
 
 .order_number_1{
@@ -348,10 +354,375 @@ body{
 
 .order_num{
 	display: flex;
-	width: 40%;
+	width: 65%;
+  align-items: center;
+  padding-top: 2%;
 }
 
 .order_num p{
-	font-size: 2rem;
+	font-size: 3rem;
 }
+
+.orfer_num_text{
+  width: 100%;
+}
+
+
+/* ------------- */
+
+.contacts {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+.contacts a {
+  display: block;
+  text-decoration: none; /* Убираем подчеркивание ссылки */
+  width: 100%; /* Занимает всю ширину контейнера */
+}
+
+.mobile, .whatsapp, .telegram {
+  background-repeat: no-repeat; /* Чтобы изображение не повторялось */
+  background-position: center center; /* Центрирование изображения */
+  background-size: contain; /* Масштабирование изображения, чтобы оно целиком помещалось в контейнер */
+  display: flex; /* Для выравнивания содержимого по центру, если будет добавлен текст или другие элементы */
+  justify-content: center; /* Горизонтальное выравнивание по центру */
+  align-items: center; /* Вертикальное выравнивание по центру */
+  height: 12vh; /* Высота контейнера */
+  width: 100%; /* Занимает всю ширину родительского элемента */
+}
+
+.mobile {
+  background-image: url('images/mobile.png'); /* Временный URL для отладки */
+}
+
+.whatsapp {
+  background-image: url('images/whatsapp.png'); /* Временный URL для отладки */
+}
+
+.telegram {
+  background-image: url('images/telegram.png'); /* Временный URL для отладки */
+}
+
+/* -------- */
+
+.footer{
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+
+
+@media (min-width: 1281px) and (max-width: 1550px) {
+  .wrapper {
+    width: 100%; /* Делаем ширину 80% */
+    padding: 0 20px; /* Добавляем отступы */
+  }
+
+  .main_screen h1 {
+    font-size: 6rem; /* Уменьшаем размер шрифта */
+  }
+
+  .main_screen_grid {
+    grid-template-columns: repeat(3, 1fr); /* Трехколоночная сетка */
+    grid-template-rows: repeat(2, 1fr); /* Увеличиваем количество строк */
+    width: 90%; /* Занимает 90% ширины */
+    height: 90vh;
+  }
+
+  .main_image_contain{
+    height: 25vh;
+  }
+
+  .advantages_text{
+    font-size: 1.7rem;
+  }
+
+  .price_image {
+    height: 60vh; /* Уменьшаем высоту */
+  }
+
+  .price_image_contain {
+    width: 50%; /* Половина ширины контейнера */
+    height: 100%; /* Занимает всю высоту */
+  }
+
+  .price_image h2 {
+    font-size: 5rem; /* Уменьшаем размер шрифта */
+  }
+
+  .order{
+    width: 100%;
+  }
+
+  .order h2{
+    font-size: 5rem;
+    align-items: right;
+  }
+
+  .order_num{
+    width: 100%;
+  }
+
+  .order_number_1, .order_number_2, .order_number_3{
+    width: 42%;
+  }
+
+  .contacts {
+    width: 50%; /* Занимает всю ширину */
+  }
+
+  .contacts a {
+    margin-right: 10px; /* Добавляем отступы справа */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .wrapper {
+    width: 90%; /* Делаем ширину 90% */
+  }
+
+  .main_screen h1 {
+    font-size: 5rem; /* Уменьшаем размер шрифта */
+  }
+
+  .main_screen_grid {
+    grid-template-columns: repeat(2, 1fr); /* Двухколоночная сетка */
+    grid-template-rows: repeat(3, 1fr); /* Увеличиваем количество строк */
+  }
+
+  .main_screen_grid_fourthImg, .main_screen_grid_thirdImg{
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .main_image_contain{
+    height: 20vh;
+  }
+
+  .main_image_line div{
+    width: 400%;
+  }
+
+  .advantages_text{
+    font-size: 1.5rem;
+  }
+
+  .price_image {
+    height: 50vh; /* Уменьшаем высоту */
+  }
+
+  .price_image_contain {
+    width: 50%; /* Половина ширины контейнера */
+    height: 100%; /* Занимает всю высоту */
+  }
+
+  .price_image h2 {
+    font-size: 4rem; /* Уменьшаем размер шрифта */
+  }
+
+  .order{
+    width: 100%;
+  }
+
+  .order h2{
+    font-size: 4rem; 
+  }
+
+  .order_num p{
+    font-size: 1.9rem;
+  }
+
+  .order_number_1, .order_number_2, .order_number_3{
+    height: 11vh;
+    width: 48vw;
+  }
+
+  .order_num{
+    width: 70%;
+  }
+
+  .contacts {
+    flex-direction: row; /* Горизонтальное направление flex */
+    width: 50%; /* Занимает всю ширину */
+  }
+
+  .mobile, .whatsapp, .telegram{
+    height: 7vh;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .wrapper {
+    width: 100%; /* Делаем ширину 100% */
+    padding: 0 20px; /* Добавляем отступы */
+  }
+    /* Уменьшаем размер логотипа */
+    .logo {
+      width: 50px;
+      height: 41px;
+      background-size: contain; /* Обеспечиваем масштабирование изображения без обрезки */
+    }
+  
+    /* Скрываем текстовый номер телефона и показываем иконку телефона */
+    .phone-number {
+      display: none; /* Скрываем текстовый номер телефона */
+    }
+  
+    .phone-icon {
+      display: inline-block; /* Показываем иконку телефона */
+      width: 24px; /* Ширина иконки */
+      height: 24px; /* Высота иконки */
+      background-image: url('images/mobile.png'); /* Устанавливаем изображение иконки телефона */
+      background-size: contain; /* Масштабирование изображения */
+      background-repeat: no-repeat; /* Запрещаем повторение изображения */
+    }
+  
+    .menu {
+      flex-direction: row; /* Обеспечиваем горизонтальное расположение элементов */
+      justify-content: space-between; /* Разделяем элементы на максимальное расстояние */
+      align-items: center; /* Выравниваем элементы по центру */
+    }
+
+    .main_screen_grid {
+      display: grid;
+      grid-template-columns: 1fr; /* Одноколоночная сетка */
+      grid-template-rows: auto; /* Высота строк зависит от содержимого */
+      width: 100%; /* Занимает всю ширину */
+      height: auto;
+    }
+    
+    .main_screen_grid_secondImg,
+    .main_screen_grid_thirdImg,
+    .main_screen_grid_fourthImg {
+      background-position: center center;
+      height: 40vh;
+    }
+    
+    .main_screen_grid_firstImg {
+      display: none;
+    }
+    
+    .main_screen_grid_firstText,
+    .main_screen_grid_secondText {
+      height: auto; /* Автоматическая высота в зависимости от содержимого */
+      margin: 10px 0; /* Отступы сверху и снизу для разделения элементов */
+    }
+    
+    .main_screen h1 {
+      font-size: 3rem; /* Уменьшаем размер шрифта */
+    }
+    
+    .main_screen_grid_firstText p,
+    .main_screen_grid_secondText p {
+      margin: 0; /* Убираем отступы у параграфов */
+      padding: 5px 0; /* Добавляем отступы для улучшения внешнего вида */
+    }
+    
+    .main_screen_grid_title {
+      font-size: 1.5rem; /* Уменьшаем размер шрифта заголовков */
+      margin-bottom: 5px; /* Отступ снизу для разделения с текстом */
+    }
+    
+    .main_image_contain{
+      height: 20vh;
+    }
+
+    .main_image_line p{
+      font-size: 1rem;
+    }
+
+    .main_image_lineContain{
+      padding: 5px 0px;
+      height: 70px;
+    }
+
+    .main_image_line div{
+      width: 400%;
+    }
+
+    .advantages_contain{
+      flex-direction: column;
+    }
+
+    .advantages_first, .advantages_second, .advantages_third{
+      width: 100%;
+      padding-top: 30px;
+    }
+
+    .advantages_title{
+      padding: 10px 0px;
+      font-weight: 800;
+    }
+
+    .advantages_text{
+      font-size: 1rem;
+      padding-top: 10px;
+    }
+
+    .price_image{
+      align-items: center;
+    }
+
+    .price_first, .price_second{
+      width: 100%;
+    }
+
+  .price_image {
+    flex-direction: column; /* Меняем направление flex */
+    height: auto; /* Автоматическая высота */
+  }
+
+  .price_image_contain {
+    width: 100%; /* Занимает всю ширину */
+    height: 50vh; /* Высота контейнера */
+  }
+
+  .price_image h2, .order h2 {
+    font-size: 2rem; /* Уменьшаем размер шрифта */
+  }
+
+  .order{
+    padding-top: 60px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .order_num{
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .order_number_1, .order_number_2, .order_number_3{
+    width: 22vw;
+    margin: 0 auto;
+  }
+
+  .order_num p{
+    font-size: 1.5rem;
+  }
+
+  .order_info{
+    padding-top: 40px;
+    display: block;
+    align-items: center;
+  }
+
+  .contacts {
+    width: 100%; /* Занимает всю ширину */
+    padding-top: 40px;
+  }
+
+  .contacts a {
+    margin-bottom: 10px; /* Добавляем отступы снизу */
+  }
+
+  .mobile, .whatsapp, .telegram{
+    height: 7vh;
+  }
+}
+
 
